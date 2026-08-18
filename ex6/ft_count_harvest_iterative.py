@@ -10,12 +10,11 @@
 #                                                                              #
 # **************************************************************************** #
 
-def ft_get_days() -> int :
-	days = input("Days until harvest: ")
-	return int(days)
-
 def ft_count_harvest_iterative():
-	days = ft_get_days()
-	for i in range(0, days + 1)
-		 
+	days = int(input("Days until harvest: "))
+	for i in range(1, days + 1):
+		print("Day", i)
+	print("Harvest time!")
+
+ft_count_harvest_iterative()
 
