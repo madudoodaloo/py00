@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-def ft_garden_name():
+def ft_garden_name() -> None:
 	status = "Growing well!"
 	name = input("Enter garden name: ")
 	print("Garden:", name)

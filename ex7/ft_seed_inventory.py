@@ -1,18 +1,24 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    ft_harvest_total.py                                :+:      :+:    :+:    #
+#    ft_seed_inventory.py                               :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: masilva- <masilva-@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/08/18 14:27:20 by masilva-          #+#    #+#              #
-#    Updated: 2026/08/18 14:27:20 by masilva-         ###   ########.fr        #
+#    Created: 2026/08/18 21:41:39 by masilva-          #+#    #+#              #
+#    Updated: 2026/08/18 21:41:39 by masilva-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-def ft_harvest_total() -> None:
-	day1 = input("Day 1 harvest: ")
-	day2 = input("Day 2 harvest: ")
-	day3 = input("Day 3 harvest: ")
-	total: int = int(day1) + int(day2) + int(day3)
-	print("Total harvest:", total)
+def ft_seed_inventory(seed_type: str, quantity: int, unit: str) -> None:
+	seed: str = seed_type.capitalize()
+
+	if unit == "packets":
+		print(seed, "seeds:", quantity, "packets available")
+	elif unit == "grams":
+		print(seed, "seeds:", quantity, "grams total")
+	elif unit == "area":
+		print(seed, "seeds: covers", quantity, "square meters")
+	else:
+		print("Unknown unit type")
+		

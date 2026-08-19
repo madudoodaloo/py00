@@ -17,9 +17,8 @@ def recursive_print(total: int, curr: int) -> None:
 	print("Day", curr)
 	recursive_print(total, curr + 1)
 
-def ft_count_harvest_recursive():
+def ft_count_harvest_recursive() -> None:
 	days = int(input("Days until harvest: "))
 	recursive_print(days, 1)	
 
-ft_count_harvest_recursive()
 
