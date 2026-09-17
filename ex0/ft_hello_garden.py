@@ -1,14 +1,2 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    ft_hello_garden.py                                 :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: masilva- <masilva-@student.42lisboa.com    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/08/18 10:36:27 by masilva-          #+#    #+#              #
-#    Updated: 2026/08/18 10:36:27 by masilva-         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 def ft_hello_garden() -> None:
-	print("Hello, Garden Community!")
+    print("Hello, Garden Community!")

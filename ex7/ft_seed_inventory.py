@@ -1,24 +1,11 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    ft_seed_inventory.py                               :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: masilva- <masilva-@student.42lisboa.com    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/08/18 21:41:39 by masilva-          #+#    #+#              #
-#    Updated: 2026/08/18 21:41:39 by masilva-         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 def ft_seed_inventory(seed_type: str, quantity: int, unit: str) -> None:
-	seed: str = seed_type.capitalize()
+    seed: str = seed_type.capitalize()
 
-	if unit == "packets":
-		print(seed, "seeds:", quantity, "packets available")
-	elif unit == "grams":
-		print(seed, "seeds:", quantity, "grams total")
-	elif unit == "area":
-		print(seed, "seeds: covers", quantity, "square meters")
-	else:
-		print("Unknown unit type")
-		
+    if unit == "packets":
+        print(seed, "seeds:", quantity, "packets available")
+    elif unit == "grams":
+        print(seed, "seeds:", quantity, "grams total")
+    elif unit == "area":
+        print(seed, "seeds: covers", quantity, "square meters")
+    else:
+        print("Unknown unit type")
